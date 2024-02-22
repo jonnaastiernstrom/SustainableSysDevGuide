@@ -49,6 +49,8 @@ section, article {
 /* Artikelstyling */
 article {
     margin-bottom: 2em;
+    width: 40%;
+    align-items: self-start;
 }
 
 /* Fotstyling */
@@ -153,6 +155,7 @@ img {vertical-align: middle;}
   border-width: 20px;
   border-color: darkgray;
 }
+
 
 .team-member img {
   width: 150px;
