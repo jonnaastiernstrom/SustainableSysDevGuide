@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +18,14 @@
             <li><a href="pageTwo.html">Sida två</a></li>
             <li><a href="about.html">Om Oss</a></li>
             <li><a href="sources.html">Källor</a></li>
+            <li class="switch-container">
+                <i class="fas fa-sun"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                <i class="fas fa-moon"></i>
+            </li> 
         </ul>
     </nav>
 
@@ -24,19 +33,19 @@
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="Images/bild1.jpg" style="width:100%">
+          <img src="Images/did-you-know.png" style="width:100%">
           <div class="text">Caption Text</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="Images/bild2.jpg" style="width:100%">
+          <img src="Images/dark-mode-view.png" style="width:100%">
           <div class="text">Caption Two</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="Images/bild3.jpg" style="width:100%">
+          <img src="Images/check-list.png" style="width:100%">
           <div class="text">Caption Three</div>
         </div>
         
@@ -52,229 +61,160 @@
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
 
-    <section>
+    <div class="stretch-container">
         <h2>Välkommen!</h2>
-
         <p> Hållbarhet har blivit väldigt aktuellt under de senaste åren. Och inte mindre aktuellt efter FN:s hållbarhetsmål, “The 2030 Agenda for Sustainable Development” (SDG), accepterades. SDG består utav 17 mål, på denna sida har vi lyft fram dom viktigaste punkterna för dig som systemutvecklare. Där du kan göra mest skillnad i ditt utvecklande och arbetsliv för att bidra till en mer hållbar framtid.   
             <br><br>
             Ordet: hållbar  
             betyder någonting som är tillräckligt stadig (i sin uppbyggnad) för att stå emot påfrestningar 
             <br><br>
-            Den utveckling i välfärden som pågått i världen de senaste 150 åren har tyvärr varit påfrestande för jordens resurser vilket vi vet har påverkat klimatet. FNs mål syftar till att bromsa den klimatpåverkan som industrialiseringen skapat och minska välfärdsklyftor samt att skapa en hållbar och mer jämställd värld som är trygg för framtida generationer. </p>
+            Den utveckling i välfärden som pågått i världen de senaste 150 åren har tyvärr varit påfrestande för jordens resurser vilket vi vet har påverkat klimatet. FNs mål syftar till att bromsa den klimatpåverkan som industrialiseringen skapat och minska välfärdsklyftor samt att skapa en hållbar och mer jämställd värld som är trygg för framtida generationer. 
+        </p>
+    </div>
+
+<div class="flex-container">
+    <section>
+        <h2>Tips och råd till dig som systemutvecklare</h2>
+        <h3>Som systemutvecklare ska du tänka på att skriva effektiv kod som exekveras fort och enkelt, men det finns flera saker du kan göra för att minska ditt klimatavtryck:</h3> 
+        <p>
+            <ol>
+                <li>Vårda din utrustning: Om du tar hand om din elektroniska utrustning och använder den längre så minskar du belastningen på miljön som efterfrågan på ny utrustning skapar. Genom att till exempel förlänga livslängden för en datorarbetsstation från tre till sex år kan kostnaderna för inköp och användning minskas med nästan 30 procent under en tioårsperiod. (Lägg på “visste du att”) </li><br>
+                <li>När du behöver ny utrustning så köp om möjligt begagnad utrustning och försök i din tur att sälja din gamla till någon som kan använda den, hela ca 80% utav produktens klimatavtryck mätt i utsläppta växthusgaser släpps redan i produktionen. Om du måste köpa ny utrustning så försök att välja en producent eller leverantör som är TCO-Certified. Det mest ekonomiskt hållbara för företaget är förmodligen att köpa in de billigaste datorerna, men de datorerna är sannolikt producerade utav människor med usla arbetsförhållanden och utan en tanke på att vårda miljön. Dessa konsekvenser belastar istället samhället ekonomiskt i längden. 
+                TCO Certified 
+                TCOTCO Certified är en hållbarhetscertifiering med fokus på att IT-produkter och deras produktion ska baseras på miljömässig, social och ekonomisk hänsyn. Produkter som är TCO Certifierade uppfyller kraven på socialt ansvarstagande i produktion, användarsäkerhet och bra ergonomisk design samt miljöegenskaper för både IT-produkterna och deras produktion under hela livscykeln. 
+                Syftet med TCO Certified är att underlätta att ställa hållbarhetskrav vid IT-inköp. I certifieringen ingår uppföljning av att hållbarhetskraven följs. http://www.tcodevelopment.se/ 
+                Produkter som är TCO certifierade 
+                Besök TCO Developments databas för att hitta TCO certifierad produkt: http://79.136.114.89/pls/nvp/!tco_search </li></br>
+
+
+                <li>Återvinn utrustning som inte längre fungerar eller som inte längre går att uppdatera. Lämna in din gamla elektronik på en återvinningstation som återvinner elektronik på rätt sätt. </li><br>
+                <li>Stäng av utrustning som inte används, enheter som står på stand-by drar ström vilket belastar elnätet i onödan, vilket leder oss in på nästa tips: </li><br>
+                <li>Se över din elleverantör och ta reda på hur din el produceras. Försök att välja en elleverantör som använder förnyelsebara källor så som vatten- och vindkraft och solenergi. Undvik smutsig el som producerats utav kol, olja och gas. </li><br> 
+                <li>Som utvecklare som tar fram hållbara it-system så måste användarens arbetssituation även tas i beaktning när man utvecklar nya system, de behöver vara delaktiga i hela processen för att systemet ska vara användbart och effektivt, målet är att det ska underlätta användarens arbete ifrån första stund. </li><br>
+                <li>Ta reda på vad din arbetsplats använder för servrar och vilken typ utav el de drivs utav. Enligt IEA står världens omkring nio miljoner datacenter för drygt Dataservrar står för 1% av världens totala energiförbrukning, enligt andra beräkningar står streaming för 3% utav den globala energianvändningen och är då i dagsläget en större “miljöbov” än flyget. Det är av stor vikt att serverhallar kan drivas av el ifrån förnyelsebara källor om den digitala utvecklingen fortsätter och det fortsätter att byggas fler än de 9 miljoner datacenter som finns idag. </li><br> 
+                <li>It kan vara en del av lösningen men också en del utav problemet (Lägg det på affishen)</li><br> 
+                <li>Undvik greenwashing, vid upphandlingar och val av server- och molnlösning så låt TCO-märkningen vara en guide. </li><br>
+                <li>För att skapa hållbarhet så har IT-industrin, som så många andra branscher, lagt fokus på minska energiåtgången (Grön IT) och skapa möjlighet till återvinning.  Men det finns mer att göra, t.ex. </li><br> 
+                </ol>
+        </p>   
     </section>
-    
-<article>
-    <h3>The 2030 Agenda for Sustainable Development</h3>
-<p>  
-<ol>
 
-<li>Ingen fattigdom</li>
+    <article>
+        <div class="image-container">
+            <img src="Images/logo_globala_malen_horizontell-1.png" alt="Globala målen logotyp" width="100%">
+        </div>
+        <h2 id="agenda-title">The 2030 Agenda for Sustainable Development</h2>
+        <h3>  
+            <ol>
+                <li>Ingen fattigdom</li>
+                <li>Ingen hunger</li>
+                <li>God hälsa och välbefinnande </li>
+                <li>God utbildning </li>
+                <li>Jämställdhet </li>
+                <li>Rent vatten och sanitet för alla </li>
+                <li>Hållbar energi för alla </li>
+                <li>Anständiga arbetsvillkor och ekonomisk tillväxt  </li>
+                <li>Hållbar industri, innovationer och infrastruktur </li>
+                <li>Minskad ojämlikhet </li>
+                <li>Hållbara städer och samhällen </li>
+                <li>Hållbar konsumtion och produktion </li>
+                <li>Bekämpa klimatförändringarna </li>
+                <li>Hav och marina resurser </li>
+                <li>Ekosystem och biologisk mångfald </li>
+                <li>Fredliga och inkluderande samhällen </li>
+                <li>Genomförande och globalt partnerskap </li>
+            </ol>
+        </h3>
+    </article>
 
-<li>Ingen hunger</li>
+    <section>
+        <h2> För att uppnå lyckade och hållbara informationssystem så kan man i utvecklingsprocessen använda sig utav Delone och McLeans modell för hållbara it-system, (2003) “Information systems success model. “ och försöka bygga system på dessa 7 delar.  </h2>
+            <ul>
+                <li>Informationskvalitet </li>
+                <li>Systemkvalitet </li>
+                <li>Servicekvalitet </li>
+                <li>Intentionen att använda systemet </li>
+                <li>Faktisk användning  </li>
+                <li>Användarnöjdhet </li>
+                <li>Uppkommen nytta (e.g. effektiva informationsprocesser med allt vad det innebär) </li>
+            </ul>
+        <p>
+            Dessa delar behöver införlivas i systemutvecklingens faser oavsett om du arbetar enligt vattenfall eller en agil form.  <br>
+            I planeringstadiet ska man bland annat planera alternativ som Gynnar ekosfären, inte skadar ekosfären och/eller har minimal påverkan på ekosfären. <br><br>
+            Till exempel kan det innebära att man planerar att köpa in begagnad hårdvara, man ser över sin energiförsörjning och kontrollerar vilken energikälla den server man tänkt använda sig av drivs utav. <br><br>
+            I en hållbar analys ska man titta på punkter som hur man kan minimera sin energianvändning, använda återvunnet material i så stor utsträckning som möjligt, minska användningen utav papper och toner, minska antalet resor i arbetet och minimera frakt utav gods. Inte låta stora lokaler som inte används stå upplysta och outnyttjade. (Systemet ska vara hållbart och flexibelt för att möjliggöra lång livslängd. Systemet ska kunna överlåtas.Finns redan med under punkten produkt!) <br><br>
+            När produkten är i utveckling ska man för att uppnå hållbar design tänka på att hårdvaran ska vara energieffektiv, man ska använda någon mjukvara för att minska energianvändningen, undersök och se till att de byggnader som ska inhysa systemen är energieffektiva, implementera hårdvaruvirtualisering, återanvänd material och minimera mängden avfall.  <br><br>
+            När produkten ska implementeras hållbart, tänk på att införskaffa energieffektiv utrustning, gör tester för att hitta fel vad gäller energiförbrukningen, installera en energihanteringsapplikation, utbilda användarna till att använda och hantera systemet på ett energieffektivt sätt och fasa ut det gamla systemet som ska ersättas efter slutförd migrering.  <br><br>
+            När systemet sedan underhålls så bör man ha regelbunden övervakning på energiförbrukningen, man behöver underhålla systemet för att förlänga dess livslängd och att säkerställ att det fortsätter att köras energieffektivt och man behöver ha fortsatt utbildning kring energieffektiv hantering av systemet. <br><br>
+            Under systemets avveckling så ska man om möjligt överlåta det till nya ägare eller återanvända delar utav systemet innan man lämnar det för destruktion och återvinning. <br><br>
+        </p>
+    </section>
 
-<li>God hälsa och välbefinnande </li>
-
-<li>God utbildning </li>
-
-<li>Jämställdhet </li>
-
-<li>Rent vatten och sanitet för alla </li>
-
-<li>Hållbar energi för alla </li>
-
-<li>Anständiga arbetsvillkor och ekonomisk tillväxt  </li>
-
-<li>Hållbar industri, innovationer och infrastruktur </li>
-
-<li>Minskad ojämlikhet </li>
-
-<li>Hållbara städer och samhällen </li>
-
-<li>Hållbar konsumtion och produktion </li>
-
-<li>Bekämpa klimatförändringarna </li>
-
-<li>Hav och marina resurser </li>
-
-<li>Ekosystem och biologisk mångfald </li>
-
-<li>Fredliga och inkluderande samhällen </li>
-
-<li>Genomförande och globalt partnerskap </li>
-</ol>
-
-<hr>
-<h2>Tips och råd till dig som systemutvecklare</h2>
-<ol>
-<h3>Som systemutvecklare ska du tänka på att skriva effektiv kod som exekveras fort och enkelt, men det finns flera saker du kan göra för att minska ditt klimatavtryck:</h3> 
-
-<li>Vårda din utrustning: Om du tar hand om din elektroniska utrustning och använder den längre så minskar du belastningen på miljön som efterfrågan på ny utrustning skapar. Genom att till exempel förlänga livslängden för en datorarbetsstation från tre till sex år kan kostnaderna för inköp och användning minskas med nästan 30 procent under en tioårsperiod. (Lägg på “visste du att”) </li><br>
-
-<li>När du behöver ny utrustning så köp om möjligt begagnad utrustning och försök i din tur att sälja din gamla till någon som kan använda den, hela ca 80% utav produktens klimatavtryck mätt i utsläppta växthusgaser släpps redan i produktionen. Om du måste köpa ny utrustning så försök att välja en producent eller leverantör som är TCO-Certified. Det mest ekonomiskt hållbara för företaget är förmodligen att köpa in de billigaste datorerna, men de datorerna är sannolikt producerade utav människor med usla arbetsförhållanden och utan en tanke på att vårda miljön. Dessa konsekvenser belastar istället samhället ekonomiskt i längden. 
-
-TCO Certified 
-
-TCOTCO Certified är en hållbarhetscertifiering med fokus på att IT-produkter och deras produktion ska baseras på miljömässig, social och ekonomisk hänsyn. Produkter som är TCO Certifierade uppfyller kraven på socialt ansvarstagande i produktion, användarsäkerhet och bra ergonomisk design samt miljöegenskaper för både IT-produkterna och deras produktion under hela livscykeln. 
-
-Syftet med TCO Certified är att underlätta att ställa hållbarhetskrav vid IT-inköp. I certifieringen ingår uppföljning av att hållbarhetskraven följs. http://www.tcodevelopment.se/ 
-
-Produkter som är TCO certifierade 
-
-Besök TCO Developments databas för att hitta TCO certifierad produkt: http://79.136.114.89/pls/nvp/!tco_search </li></br>
-
- 
-
-<li>Återvinn utrustning som inte längre fungerar eller som inte längre går att uppdatera. Lämna in din gamla elektronik på en återvinningstation som återvinner elektronik på rätt sätt. </li><br>
-
-<li>Stäng av utrustning som inte används, enheter som står på stand-by drar ström vilket belastar elnätet i onödan, vilket leder oss in på nästa tips: </li><br>
-
-<li>Se över din elleverantör och ta reda på hur din el produceras. Försök att välja en elleverantör som använder förnyelsebara källor så som vatten- och vindkraft och solenergi. Undvik smutsig el som producerats utav kol, olja och gas. </li><br> 
-
-<li>Som utvecklare som tar fram hållbara it-system så måste användarens arbetssituation även tas i beaktning när man utvecklar nya system, de behöver vara delaktiga i hela processen för att systemet ska vara användbart och effektivt, målet är att det ska underlätta användarens arbete ifrån första stund. </li><br>
-
-<li>Ta reda på vad din arbetsplats använder för servrar och vilken typ utav el de drivs utav. Enligt IEA står världens omkring nio miljoner datacenter för drygt Dataservrar står för 1% av världens totala energiförbrukning, enligt andra beräkningar står streaming för 3% utav den globala energianvändningen och är då i dagsläget en större “miljöbov” än flyget. Det är av stor vikt att serverhallar kan drivas av el ifrån förnyelsebara källor om den digitala utvecklingen fortsätter och det fortsätter att byggas fler än de 9 miljoner datacenter som finns idag. </li><br> 
-
-<li>It kan vara en del av lösningen men också en del utav problemet (Lägg det på affishen)</li><br> 
-
-<li>Undvik greenwashing, vid upphandlingar och val av server- och molnlösning så låt TCO-märkningen vara en guide. </li><br>
-
-<li>För att skapa hållbarhet så har IT-industrin, som så många andra branscher, lagt fokus på minska energiåtgången (Grön IT) och skapa möjlighet till återvinning.  Men det finns mer att göra, t.ex. </li><br> 
-       
-</ol>
-</p>   
-</article>
-
-<section>
-   <h2>Process:</h2> 
-<ul>
-<li> Skriv effektiv kod som exekveras snabbt </li>
-    
-<li>   Använd förnybara energikällor till din elektronik </li>
-    
-<li>   Involvera användaren i utvecklingen </li>
-    
-<li>   Använd TCO-Certifierade produkter </li>
-    
-<li>   Köp begagnat eller laga din utrustning, köp inte nytt i onödan </li>
-    
-<li>   Undvik onödiga resor i arbetet </li>
-    
-<li>   Använd tester för att identifiera brister vad gäller energiförbrukning </li>
-    
-<li>   Skriva kod som är återanvändningsbar </li>
-    
-<li>   Använda energieffektiv utrustning </li>
-    
-<li>   Installation och konfigurering av energihanteringsapplikation </li>
-    
-<li>   Fasa ut gamla system </li>
-    
-<li>   Utbilda användarna </li>
-    
-<li>   Övervaka energiförbrukningen </li>
-    
-<li>   Underhåll systemet </li>
-    
-<li>   Identifiera underutnyttjande system </li>
-    
-<li>   Fortsatt utbildning kring energieffektiv hantering av systemet </li>
-    
-<li>   Överlåta system till ny ägare </li>
-    
-<li>   Återanvändning utav delar </li>
-    
-<li>  Destruktion och återvinning </li>
-</ul>
-</section>
-<section>
-    <h2>Produkt:</h2>
-
-    <ul>
-        <li> Ska bidra till en hållbar situation för användaren, snabbt, effektivt  </li>
-
+    <article>
+        <h2>Produkt:</h2>
+        <ul>
+            <li> Ska bidra till en hållbar situation för användaren, snabbt, effektivt  </li>
             <li>Ska vara energisnål </li>
-            
-            <li>Vara underhållsbar </li>
-            
-           <li> Utveckla system som går att återanvända eller bygga på </li>
-    </ul>
-</section>
+            <li>Vara underhållsbar </li>  
+            <li> Utveckla system som går att återanvända eller bygga på </li>
+        </ul>
+    </article>
 
-<section>
-   <h2> För att uppnå lyckade och hållbara informationssystem så kan man i utvecklingsprocessen använda sig utav Delone och McLeans modell för hållbara it-system, (2003) “Information systems success model. “ och försöka bygga system på dessa 7 delar.  </h2>
-<ul>
-<li>Informationskvalitet </li>
+    <section>
+            <h3>Användarmedverkan</h3>
+            <p>
+                Att inkludera användarna i systemets utvecklingsprocess har visat sig ge bättre system, högre användarnöjdhet och en högre social hållbarhet, vilket också gör att systemet används i högre grad när det är i drift och då också gör mer nytta för den process, ekonomisk samt ekologiska belastning som framtagningen varit.  <br><br>
+                Här kommer Tips till dig som deltar i systemutvecklingen, oavsett roll i teamet kan du verka för att öka användarmedverkan genom att: <br><br>
+            <ul>
+                <li>Undersöka och förstå användarens behov och arbetsuppgifter, så att de blir vägledande i utvecklingen.  </li><br>
+                <li> Låt de blivande användarna delta i arbetet tidigt i processen och sedan med jämna mellanrum ända tills systemet är klart </li><br>
+                <li> Utveckla systemet enligt en agil projektmetod/modell? Det har visat sig mer framgångsrikt att använda en iterativ och inkrementell metod? Än med en vattenfallsmodell </li><br>      
+                <li> Alla ska kunna förstå dokumentationen för design </li><br>
+                <li> Använd prototyping för att tidigt kunna testa design och för att se att ni i teamet talar samma språk </li><br>       
+                <li>  Använd mätbara mål och kriterier för användbarhet och design </li><br>       
+                <li>  Planera in tid för designaktiviteter under utvecklingsprocessen </li><br>     
+                <li> Utnyttja alla kompetenser som teamet innehåller och lär utav dem som kan mer än du </li><br>     
+                <li>Håll fokus på användbarheten genom att involvera en förespråkare tidigt men också under hela processen. </li><br>     
+                <li>Integrera alla delar som påverkar användbarheten med varandra? Tex att kunna skicka personnummer mellan sidor för att slippa klippa, klistra eller memorera eller vad menas? </li><br>       
+                <li> Skräddarsy den användarcentrerade processen efter vad som passar ert team och ert projekt  </li><br>
+                <li> Ha alltid en användarcentrerad attityd </li><br>
+            </ul>
+        </p>
+    </section>
 
-<li>Systemkvalitet </li>
+    <article>
+        <h2>Process:</h2> 
+        <ul>
+            <li> Skriv effektiv kod som exekveras snabbt </li>
+            <li>   Använd förnybara energikällor till din elektronik </li> 
+            <li>   Involvera användaren i utvecklingen </li>  
+            <li>   Använd TCO-Certifierade produkter </li>
+            <li>   Köp begagnat eller laga din utrustning, köp inte nytt i onödan </li>   
+            <li>   Undvik onödiga resor i arbetet </li>
+            <li>   Använd tester för att identifiera brister vad gäller energiförbrukning </li>
+            <li>   Skriva kod som är återanvändningsbar </li>
+            <li>   Använda energieffektiv utrustning </li>
+            <li>   Installation och konfigurering av energihanteringsapplikation </li>
+            <li>   Fasa ut gamla system </li>
+            <li>   Utbilda användarna </li>
+            <li>   Övervaka energiförbrukningen </li>
+            <li>   Underhåll systemet </li>
+            <li>   Identifiera underutnyttjande system </li>
+            <li>   Fortsatt utbildning kring energieffektiv hantering av systemet </li>
+            <li>   Överlåta system till ny ägare </li>
+            <li>   Återanvändning utav delar </li>  
+            <li>  Destruktion och återvinning </li>
+        </ul>
+    </article>
 
-<li>Servicekvalitet </li>
-
-<li>Intentionen att använda systemet </li>
-
-<li>Faktisk användning  </li>
-
-<li>Användarnöjdhet </li>
-
-<li>Uppkommen nytta (e.g. effektiva informationsprocesser med allt vad det innebär) </li>
-</ul>
-
-<p>
-    Dessa delar behöver införlivas i systemutvecklingens faser oavsett om du arbetar enligt vattenfall eller en agil form.  <br>
-
-I planeringstadiet ska man bland annat planera alternativ som Gynnar ekosfären, inte skadar ekosfären och/eller har minimal påverkan på ekosfären. <br><br>
-
-Till exempel kan det innebära att man planerar att köpa in begagnad hårdvara, man ser över sin energiförsörjning och kontrollerar vilken energikälla den server man tänkt använda sig av drivs utav. <br><br>
-
-I en hållbar analys ska man titta på punkter som hur man kan minimera sin energianvändning, använda återvunnet material i så stor utsträckning som möjligt, minska användningen utav papper och toner, minska antalet resor i arbetet och minimera frakt utav gods. Inte låta stora lokaler som inte används stå upplysta och outnyttjade. (Systemet ska vara hållbart och flexibelt för att möjliggöra lång livslängd. Systemet ska kunna överlåtas.Finns redan med under punkten produkt!) <br><br>
-
-När produkten är i utveckling ska man för att uppnå hållbar design tänka på att hårdvaran ska vara energieffektiv, man ska använda någon mjukvara för att minska energianvändningen, undersök och se till att de byggnader som ska inhysa systemen är energieffektiva, implementera hårdvaruvirtualisering, återanvänd material och minimera mängden avfall.  <br><br>
-
-När produkten ska implementeras hållbart, tänk på att införskaffa energieffektiv utrustning, gör tester för att hitta fel vad gäller energiförbrukningen, installera en energihanteringsapplikation, utbilda användarna till att använda och hantera systemet på ett energieffektivt sätt och fasa ut det gamla systemet som ska ersättas efter slutförd migrering.  <br><br>
-
-När systemet sedan underhålls så bör man ha regelbunden övervakning på energiförbrukningen, man behöver underhålla systemet för att förlänga dess livslängd och att säkerställ att det fortsätter att köras energieffektivt och man behöver ha fortsatt utbildning kring energieffektiv hantering av systemet. <br><br>
-
-Under systemets avveckling så ska man om möjligt överlåta det till nya ägare eller återanvända delar utav systemet innan man lämnar det för destruktion och återvinning. <br><br>
-</p>
-</section>
-<section>
-    <h3>Användarmedverkan</h3>
-    <p>
-        Att inkludera användarna i systemets utvecklingsprocess har visat sig ge bättre system, högre användarnöjdhet och en högre social hållbarhet, vilket också gör att systemet används i högre grad när det är i drift och då också gör mer nytta för den process, ekonomisk samt ekologiska belastning som framtagningen varit.  <br><br>
-
-Här kommer Tips till dig som deltar i systemutvecklingen, oavsett roll i teamet kan du verka för att öka användarmedverkan genom att: <br><br>
-<ul>
-    <li>Undersöka och förstå användarens behov och arbetsuppgifter, så att de blir vägledande i utvecklingen.  </li><br>
-
-    <li> Låt de blivande användarna delta i arbetet tidigt i processen och sedan med jämna mellanrum ända tills systemet är klart </li><br>
-        
-    <li> Utveckla systemet enligt en agil projektmetod/modell? Det har visat sig mer framgångsrikt att använda en iterativ och inkrementell metod? Än med en vattenfallsmodell </li><br>
-        
-    <li> Alla ska kunna förstå dokumentationen för design </li><br>
-        
-    <li> Använd prototyping för att tidigt kunna testa design och för att se att ni i teamet talar samma språk </li><br>
-        
-    <li>  Använd mätbara mål och kriterier för användbarhet och design </li><br>
-        
-    <li>  Planera in tid för designaktiviteter under utvecklingsprocessen </li><br>
-        
-    <li> Utnyttja alla kompetenser som teamet innehåller och lär utav dem som kan mer än du </li><br>
-        
-    <li>Håll fokus på användbarheten genom att involvera en förespråkare tidigt men också under hela processen. </li><br>
-        
-    <li>Integrera alla delar som påverkar användbarheten med varandra? Tex att kunna skicka personnummer mellan sidor för att slippa klippa, klistra eller memorera eller vad menas? </li><br>
-        
-    <li> Skräddarsy den användarcentrerade processen efter vad som passar ert team och ert projekt  </li><br>
-   
-    <li> Ha alltid en användarcentrerad attityd </li><br>
-</ul>
-    </p>
-</section>
+</div>
 
 <footer>
         <p>&copy; 2024 HåSU || Jonna Stjernström, Josefine With & Frida Saari</p>
 </footer>
 
     <script src="site.js"></script>
+    <script src="aboutSite.js"></script>
     
 </body>
 </html>

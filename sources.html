@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -16,13 +17,22 @@
             <li><a href="pageTwo.html">Sida två</a></li>
             <li><a href="about.html">Om Oss</a></li>
             <li><a href="sources.html" class="active">Källor</a></li>
+            <li class="switch-container">
+                <i class="fas fa-sun"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                <i class="fas fa-moon"></i>
+            </li> 
         </ul>
     </nav>
-    <div>
-    <h1>Våra källor</h1>
-</div>
+    <div class="stretch-container">
+        <h1>Våra källor</h1>
+        <p>Är du nyfiken och vill läsa mer? Här har vi listat våra källor så att det är enkelt att klicka sig vidare för att få läsa mer om detta viktiga ämne.</p>
+    </div>
 
-<div>
+<div class="stretch-container">
     <ul class="source-list">    
       <li><a href="https://sdgs.un.org/goals">https://sdgs.un.org/goals</a></li><br>
       <li><a href="https://miljomarkningar.se/tco/">https://miljomarkningar.se/tco/</a></li><br>
@@ -32,7 +42,8 @@
       <li><a href="https://elearn20.miun.se/moodle/pluginfile.php/1538945/mod_book/chapter/30908/huang_orginal.pdf">https://elearn20.miun.se/moodle/pluginfile.php/1538945/mod_book/chapter/30908/huang_orginal.pdf</a></li><br>
       <li>Lärmoment i Moodle Hållbar systemutveckling IK109G</li><br>
     </ul> 
-  </div>
-  
+</div>
+
+  <script src="aboutSite.js"></script>
 </body>
 </html>

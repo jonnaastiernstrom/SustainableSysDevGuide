@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -16,8 +17,16 @@
             <li><a href="pageTwo.html" class="active">Sida två</a></li>
             <li><a href="about.html">Om Oss</a></li>
             <li><a href="sources.html">Källor</a></li>
+            <li class="switch-container">
+                <i class="fas fa-sun"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                <i class="fas fa-moon"></i>
+            </li> 
         </ul>
     </nav>
-    
+    <script src="aboutSite.js"></script>
 </body>
 </html>
