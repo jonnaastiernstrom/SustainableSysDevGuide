@@ -2,49 +2,93 @@
 * { box-sizing: border-box}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111111;
+  color:#fff;
 }
-
 header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
 }
-
 /* Navigeringsmeny */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #444;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #444;
+  display: flex; 
+  align-items: center; 
 }
-nav ul li { display: inline;}
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 0.5em 1em;
-    display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 1em 1em;
+  display: inline-block;
 }
 nav ul li a:hover { background-color: #555;}
-
+.switch-container {
+  margin-left: auto;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.fas {
+  font-size: 20px;
+  color:#fff;
+  margin: 5px;
+}
+.stretch-container {
+  margin: 20px;
+  padding: 1em;
+  background-color: #111111;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
 section, article {
-    margin: 1em;
-    padding: 1em;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 1em;
+  padding: 1em;
+  background-color: #111111;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
+}
+article {
+  width: 30%;
+}
+section {
+  width: 66%;
+}
+.light-mode {
+  background-color: #f0f0f0;
+  color: #000; 
+}
+.light-mode section, .light-mode article, .light-mode .stretch-container {
+  background-color: #fff;
+  color: #000;
+}
+#agenda-title {
+  text-align: center;
+  margin-top: 50px;
+}
+.image-container {
+  background-color: #fff;
+  padding: 10px;
 }
 
 /* Carousel styleing */
 .mySlides {display: none}
 img {vertical-align: middle;}
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1500px;
   position: relative;
   margin: auto;
 }
@@ -110,16 +154,15 @@ img {vertical-align: middle;}
 .team-member {
   text-align: center;
   margin-bottom: 30px;
+  padding: 10px;
   display: inline-block;
-  width: 30%; /* Anpassa bredden efter dina behov */
+  width: 31%; /* Anpassa bredden efter dina behov */
   margin: 0 1%; /* Justera mellanrummet mellan personerna */
   text-align: center;
   border-style:solid;
   border-width: 20px;
   border-color: darkgray;
 }
-
-
 .team-member img {
   width: 150px;
   height: 150px;
@@ -127,10 +170,65 @@ img {vertical-align: middle;}
   margin-top: 20px;
   
 }
-
 .source-list li{
   list-style: none;
 }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 25px;
+}
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
 
 @keyframes fade {
   from {opacity: .4} 
