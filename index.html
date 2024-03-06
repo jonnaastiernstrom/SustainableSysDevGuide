@@ -10,6 +10,16 @@
 <body>
     <header>
         <h1>Handbok i Hållbarhet</h1>
+        <div class="flex-container">
+            <div class="switch-container">
+                <i class="fas fa-sun"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
     </header>
     
     <nav>
@@ -19,14 +29,6 @@
             <li><a href="pageThree.html">Miljö</a></li>
             <li><a href="about.html">Om Oss</a></li>
             <li><a href="sources.html">Källor</a></li>
-            <li class="switch-container">
-                <i class="fas fa-sun"></i>
-                    <label class="switch">
-                        <input type="checkbox" id="mode-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                <i class="fas fa-moon"></i>
-            </li> 
         </ul>
     </nav>
 
@@ -34,23 +36,27 @@
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="Images/did-you-know.png" style="width:100%">
-          <div class="text">Caption Text</div>
+          <img src="Images/did-you-know.png" alt="Skrivbord med en laptop och några böcker och pennor" style="width:100%">
+          <div class="text text-slide-one">
+            <h3>Ordet: Hållbar</h3>
+            <p> 
+                Betyder någonting som är tillräckligt stadig (i sin uppbyggnad) för att stå emot påfrestningar 
+            </p>
+          </div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="Images/dark-mode-view.png" style="width:100%">
+          <img src="Images/dark-mode-view.png" alt="En man som står vid sitt skrivbord, två skärmar med båda darkmode-vy" style="width:100%">
           <div class="text text-slide-two">
-            <h5>Visste du att?</h5>
+            <h3>Visste du att?</h3>
             <p>Använder du Darkmode via din mobil eller surfplatta minskar batteritiden med upp till 47%.</p>
           </div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="Images/check-list.png" style="width:100%">
-          <div class="text">Caption Three</div>
+          <img src="Images/check-list.png" alt="Skrivbord med en dator och en checklista, text över bilden: hur hållbart utvecklar du?" style="width:100%">
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>

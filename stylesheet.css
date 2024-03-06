@@ -32,7 +32,6 @@ nav ul li a {
 nav ul li a:hover { background-color: #555;}
 .switch-container {
   margin-left: auto;
-  margin-right: 10px;
   display: flex;
   align-items: center;
 }
@@ -83,10 +82,8 @@ section {
   background-color: #fff;
   padding: 10px;
 }
-
 /* Carousel styleing */
 .mySlides {display: none}
-img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1500px;
   position: relative;
@@ -115,16 +112,23 @@ img {vertical-align: middle;}
 }
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  background-color: #71717188;
+  font-size: 18px;
+  font-weight: bold;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 500px;
   text-align: center;
+  border-radius: 20px;
 }
 .text-slide-two {
-  color: #000;
-  padding: 5px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.text-slide-one {
+  margin-left: 10%;
+  margin-bottom: 15%;
 }
 .numbertext {
   color: #f2f2f2;
@@ -160,12 +164,12 @@ img {vertical-align: middle;}
   margin-bottom: 30px;
   padding: 10px;
   display: inline-block;
-  width: 31%; /* Anpassa bredden efter dina behov */
-  margin: 0 1%; /* Justera mellanrummet mellan personerna */
-  text-align: center;
-  border-style:solid;
+  width: 31%; 
+  margin: 0 1%; 
+  border-style: solid;
   border-width: 20px;
   border-color: darkgray;
+  box-sizing: border-box;
 }
 .team-member img {
   width: 150px;
@@ -176,6 +180,9 @@ img {vertical-align: middle;}
 }
 .source-list li{
   list-style: none;
+}
+.source-list a {
+  word-wrap: break-word;
 }
 
 /* The switch - the box around the slider */
@@ -266,13 +273,63 @@ input:checked + .slider:before {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-@media (max-width: 768px) {
+/* Responsivitet */
+
+@media all and (max-width: 1024px) {
+  nav ul {
+    justify-content: space-between;
+  }
+  nav ul li {
+    flex-grow: 1;
+    text-align: center; 
+  }
+  .flex-container {
+    flex-direction: column;
+  }
   .team-member {
-      width: 100%;
-      margin: 0 0 20px 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    flex-grow: 1; 
+    text-align: center; 
+  }
+  section, article {
+      width: 96%;
+  }
+  .text {
+    width: 300px;
+  }
+  .text-slide-two {
+    margin-left: 2%;  
+    margin-bottom: 2%; 
+  }
+  .text-slide-one {
+    margin-left: 7%;  
+    margin-bottom: 10%; 
   }
 }
+
+@media all and (max-width: 500px) {
+  nav ul li {
+    font-size: 12px;
+  }
+  section, article {
+    width: 92%;
+  }
+  .text {
+    background-color: #717171b4;
+    width: 250px;
+    font-size: 12px;
+  }
+  .text-slide-two {
+    margin-left: 10%;  
+    margin-bottom: 1%; 
+  }
+  .text-slide-one {
+    margin-left: 10%;  
+    margin-bottom: 1%; 
+  }
+}
+
+
