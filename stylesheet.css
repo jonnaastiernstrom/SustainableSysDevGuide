@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: #111111;
   color:#fff;
+  font-size: 20px;
 }
 header, footer {
   background-color: #333;
@@ -29,6 +30,13 @@ nav ul li a {
   display: inline-block;
 }
 nav ul li a:hover { background-color: #555;}
+#toggle-content {
+  background-color: #0e78cf;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
 .switch-container {
   margin-left: auto;
   display: flex;
@@ -45,6 +53,7 @@ nav ul li a:hover { background-color: #555;}
   background-color: #111111;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
+  width: 97%;
 }
 .flex-container {
   display: flex;
@@ -61,9 +70,15 @@ section, article {
 }
 article {
   width: 30%;
+  font-size: 24px;
+  word-wrap: break-word;
+}
+.article-font-style {
+  font-size: 21px;
 }
 section {
-  width: 66%;
+  width: 65%;
+  word-wrap: break-word;
 }
 section a, article a, .stretch-container a {
   color: #4e77ff;
@@ -96,7 +111,19 @@ section a:hover, article a:hover, .stretch-container a:hover {
   margin-top: 50px;
 }
 .image-container {
+  max-width: 100%;
+  height: auto;
   box-shadow: 0 2px 3px rgba(255, 255, 255, 0.575);
+}
+.image-container-background {
+  background-color: #fff;
+  padding: 10px;
+}
+.center-images {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  max-width: 100%;
 }
 /* Carousel styleing */
 .mySlides {display: none}
@@ -289,11 +316,10 @@ input:checked + .slider:before {
 #law-div p {
   font-size: 20px;
 }
-.aria-div{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.hidden-content {
+  display: none;
 }
+
 
 
 @keyframes fade {
@@ -343,6 +369,7 @@ input:checked + .slider:before {
   #law-div {
     width: 100%;
   }
+
 }
 
 @media all and (max-width: 500px) {
@@ -350,6 +377,9 @@ input:checked + .slider:before {
     font-size: 12px;
   }
   section, article {
+    width: 92%;
+  }
+  .stretch-container {
     width: 92%;
   }
   .text {
@@ -373,6 +403,11 @@ input:checked + .slider:before {
     margin-right: 0px;
     margin-left: 0px;
   }
+  .image-container {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
 }
 
 

@@ -12,6 +12,7 @@
         <h1>Handbok i Hållbarhet</h1>
         <div class="flex-container">
             <div class="switch-container">
+                <button id="toggle-content"></button>
                 <i class="fas fa-sun"></i>
                     <label class="switch">
                         <input type="checkbox" id="mode-toggle">
@@ -36,7 +37,7 @@
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="Images/did-you-know.png" alt="Skrivbord med en laptop och några böcker och pennor" style="width:100%">
+          <img class="hide-img" src="Images/did-you-know.png" alt="Skrivbord med en laptop och några böcker och pennor" style="width:100%">
           <div class="text text-slide-one">
             <h3>Ordet: Hållbar</h3>
             <p> 
@@ -47,7 +48,7 @@
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="Images/dark-mode-view.png" alt="En man som står vid sitt skrivbord, två skärmar med båda darkmode-vy" style="width:100%">
+          <img class="hide-img" src="Images/dark-mode-view.png" alt="En man som står vid sitt skrivbord, två skärmar med båda darkmode-vy" style="width:100%">
           <div class="text text-slide-two">
             <h3>Visste du att?</h3>
             <p>Använder du Darkmode via din mobil eller surfplatta minskar batteritiden med upp till 47%.</p>
@@ -56,13 +57,11 @@
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="Images/check-list.png" alt="Skrivbord med en dator och en checklista, text över bilden: hur hållbart utvecklar du?" style="width:100%">
+          <img class="hide-img" src="Images/check-list.png" alt="Skrivbord med en dator och en checklista, text över bilden: hur hållbart utvecklar du?" style="width:100%">
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
         <br>
         
         <div style="text-align:center">
@@ -70,15 +69,18 @@
           <span class="dot" onclick="currentSlide(2)"></span> 
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
+    </div>
 
     <div class="stretch-container">
         <h2>Välkommen!</h2>
         <p> Hållbarhet har blivit väldigt aktuellt under de senaste åren. Och inte mindre aktuellt efter FN:s hållbarhetsmål, “The 2030 Agenda for Sustainable Development” (SDG), accepterades. SDG består utav 17 mål, på denna sida har vi lyft fram dom viktigaste punkterna för dig som systemutvecklare. Där du kan göra mest skillnad i ditt utvecklande och arbetsliv för att bidra till en mer hållbar framtid.   
             <br><br>
             Ordet: hållbar  
-            betyder någonting som är tillräckligt stadig (i sin uppbyggnad) för att stå emot påfrestningar 
+            betyder någonting som är tillräckligt stadig (i sin uppbyggnad) för att stå emot påfrestningar.
             <br><br>
             Den utveckling i välfärden som pågått i världen de senaste 150 åren har tyvärr varit påfrestande för jordens resurser vilket vi vet har påverkat klimatet. FNs mål syftar till att bromsa den klimatpåverkan som industrialiseringen skapat och minska välfärdsklyftor samt att skapa en hållbar och mer jämställd värld som är trygg för framtida generationer. 
+            <br><br>
+            Vi vill också såklart att denna sida ska vara hållbar. Därför har vi valt att ha den i dark mode. Men det blir inte så hållbart om man vill skriva ut, därför går det att byta till light mode. Detta gör även designen mer tillgänglig. Bilder är inte heller det mest hållbara och inte så bra för att skriva ut. Därför har vi valt att ha en knapp för att kunna dölja dessa. Detta för att vi vill att sidan ska vara både en trevlig webbsida men också en hållbar och effektiv handbok.
         </p>
     </div>
 
@@ -102,7 +104,7 @@
                 <li>Se över din elleverantör och ta reda på hur din el produceras. Försök att välja en elleverantör som använder förnyelsebara källor så som vatten- och vindkraft och solenergi. Undvik smutsig el som producerats utav kol, olja och gas. </li><br> 
                 <li>Som utvecklare som tar fram hållbara it-system så måste användarens arbetssituation även tas i beaktning när man utvecklar nya system, de behöver vara delaktiga i hela processen för att systemet ska vara användbart och effektivt, målet är att det ska underlätta användarens arbete ifrån första stund. </li><br>
                 <li>Ta reda på vad din arbetsplats använder för servrar och vilken typ utav el de drivs utav. Enligt IEA står världens omkring nio miljoner datacenter för drygt Dataservrar står för 1% av världens totala energiförbrukning, enligt andra beräkningar står streaming för 3% utav den globala energianvändningen och är då i dagsläget en större “miljöbov” än flyget. Det är av stor vikt att serverhallar kan drivas av el ifrån förnyelsebara källor om den digitala utvecklingen fortsätter och det fortsätter att byggas fler än de 9 miljoner datacenter som finns idag. </li><br> 
-                <li>It kan vara en del av lösningen men också en del utav problemet (Lägg det på affishen)</li><br> 
+                <li>SVG vs PNG/JPG: Vissa ikoner, särskilt de skapade som vektorgrafik i Scalable Vector Graphics (SVG)-format, kan vara mer prestandavänliga än bilder i format som PNG eller JPG. SVG-ikoner kan skalas utan att förlora kvalitet och tar ofta upp mindre utrymme.</li><br> 
                 <li>Undvik greenwashing, vid upphandlingar och val av server- och molnlösning så låt TCO-märkningen vara en guide. </li><br>
                 <li>För att skapa hållbarhet så har IT-industrin, som så många andra branscher, lagt fokus på minska energiåtgången (Grön IT) och skapa möjlighet till återvinning.  Men det finns mer att göra, t.ex. </li><br> 
                 </ol>
@@ -110,7 +112,7 @@
     </section>
 
     <article>
-        <div class="image-container">
+        <div class="image-container-background">
             <img src="Images/logo_globala_malen_horizontell-1.png" alt="Globala målen logotyp" width="100%">
         </div>
         <h2 id="agenda-title">The 2030 Agenda for Sustainable Development</h2>
@@ -170,10 +172,13 @@
             <li> Utveckla system som går att återanvända eller bygga på </li>
             <li>Ska gå att återvinna på ett säkert sätt</li>
         </ul>
+        <div class="center-images">
+            <img class="hide-img" src="Images/web-page.png" alt="Ikon med datorskärm med pratbubblor med JS och HTML" width="50%">
+        </div>
     </article>
 
     <section>
-            <h3>Användarmedverkan</h3>
+            <h2>Användarmedverkan</h2>
             <p>
                 Att inkludera användarna i systemets utvecklingsprocess har visat sig ge bättre system, högre användarnöjdhet och en högre social hållbarhet, vilket också gör att systemet används i högre grad när det är i drift och då också gör mer nytta för den process, ekonomisk samt ekologiska belastning som framtagningen varit.  <br><br>
                 Här kommer Tips till dig som deltar i systemutvecklingen, oavsett roll i teamet kan du verka för att öka användarmedverkan genom att: <br><br>

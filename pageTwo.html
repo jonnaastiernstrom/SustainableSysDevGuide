@@ -12,6 +12,7 @@
         <h1>Handbok i Hållbarhet</h1>
         <div class="flex-container">
             <div class="switch-container">
+                <button id="toggle-content"></button>
                 <i class="fas fa-sun"></i>
                     <label class="switch">
                         <input type="checkbox" id="mode-toggle">
@@ -45,8 +46,8 @@
     </div>
 
     <div class="flex-container">
-        <article>
-            <h2 class="left-behind">För att ingen i vårt samhälle ska lämnas utanför är det viktigt att designa för människors olika behov</h2>
+        <article class="article-font-style">
+            <h3 class="left-behind">För att ingen i vårt samhälle ska lämnas utanför är det viktigt att designa för människors olika behov</h3>
             <img class="leftbehind-img" src="Images/noonebehind.png" alt="sustainable goals- picture with text: leave no one behind" width="100%">
             <p>Digg – Myndigheten för digital förvaltning, har en lista med webbriktlinjer som man som utvecklare
                 bör känna till och sträva efter att följa för att skapa socialt hållbara informationssystem.
@@ -125,7 +126,9 @@
         </ul>
         </section>
         <article>
-            <img class="image-container" src="Images/toolbox.jpg" alt="Toolbox with tools" width="100%">
+            <div class="center-images">
+            <img class="hide-img" src="Images/tool-box.png" alt="Toolbox with tools" width="50%">
+        </div>
             <h2>Verktyg</h2>
                 <br><br>
 
@@ -154,7 +157,9 @@
              <strong>Robust (Robust):</strong> Innehåll måste vara tillräckligt robust för att kunna tolkas tillförlitligt av ett brett urval av användaragenter, inklusive assisterande teknologier. Det innebär att utvecklare måste följa standarder och riktlinjer för att säkerställa kompatibilitet. 
              
             <br><br>
-             <img src="Images/simple-life-screen.jpg" alt="Laptop med text: I design and develop experiences that make people's lives simple" height="400px">
+            <div class="center-images">
+             <img class="image-container hide-img" src="Images/simple-life-screen.jpg" alt="Laptop med text: I design and develop experiences that make people's lives simple" height="400px">
+            </div>
              <h3>Hur går man vidare med denna information då? </h3>
              Nedan följer några förslag på hur du som systemutvecklare kan anpassa dig efter dessa principer när du utvecklar för att öka tillgängligheten. 
              <br>
@@ -189,14 +194,14 @@
              <br>
              Testa ditt innehåll över ett brett spektrum av webbläsare, operativsystem och assisterande teknologier för att identifiera och åtgärda specifika kompatibilitetsproblem. Denna robusthet säkerställer att alla användare, oavsett deras teknikval, kan få åtkomst till och interagera med ditt innehåll.  </p> 
          </section>
-        <article class="aria-div">
+        <article>
             <h2>ARIA (Accessible Rich Internet Applications) </h2>
             <p>ARIA-roller är en del av W3C:s Web Accessibility Initiative och definierar ett sätt att göra webbinnehåll och webbapplikationer mer tillgängliga för personer med funktionsnedsättningar. Dessa roller hjälper till med dynamiskt innehåll och avancerade användargränssnittskontroller utvecklade med HTML, JavaScript och relaterade teknologier. Utan WAI-ARIA kan viss funktionalitet på webbplatser vara otillgänglig för vissa användare med funktionsnedsättningar, särskilt de som förlitar sig på skärmläsare och de som inte kan använda en mus. 
             <br><br>
             WAI-ARIA erbjuder en ram för att lägga till attribut för att identifiera funktioner för användarinteraktion, hur de förhåller sig till varandra och deras aktuella tillstånd. Det beskriver navigeringstekniker för att markera regioner och vanliga webbstrukturer som menyer, huvudinnehåll, sekundärt innehåll, bannerinformation och andra typer av webbstrukturer. Med WAI-ARIA kan utvecklare identifiera sidregioner och möjliggöra för tangentbordsanvändare att enkelt flytta mellan regioner istället för att behöva trycka på Tab många gånger. WAI-ARIA inkluderar också tekniker för att kartlägga kontroller, live-regioner och händelser till tillgänglighetsprogrammeringsgränssnitt (API:er), inklusive anpassade kontroller som används för rika internetapplikationer. 
             <br><br>
             Grunden för ARIA är mer än 150 deklarationer som kan läggas till i webbsidekod så att assisterande teknologier, såsom skärmläsare, kan förstå hur sidan ska presenteras. Dessa deklarationer definieras av WAI-ARIA-specifikationen och inkluderar roller, egenskaper och tillstånd som inte är infödda i de språk som används för att skapa webbplatser, såsom HTML, JavaScript, CSS och SVG. </p><br><br>
-            <img class="image-container" src="Images/aira-image.jpg" alt="A computer with a refreshable braille display." width="100%">
+            <img class="image-container hide-img" src="Images/aira-image.jpg" alt="A computer with a refreshable braille display." width="100%">
         </article>
     </div>
 
@@ -260,6 +265,9 @@
 <li>Behandla överträdelser av koden som oförenliga med medlemskap i ACM. </li>
 </ol>
     </div>
+    <footer>
+        <p>&copy; 2024 HåSU || Jonna Stjernström, Josefine With & Frida Saari</p>
+</footer>
     <script src="aboutSite.js"></script>
 </body>
 </html>
