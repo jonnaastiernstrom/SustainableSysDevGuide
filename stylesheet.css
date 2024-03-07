@@ -167,11 +167,11 @@ section a:hover, article a:hover, .stretch-container a:hover {
 }
 .text-slide-two {
   margin-left: 5%;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
 .text-slide-one {
   margin-left: 10%;
-  margin-bottom: 15%;
+  margin-bottom: 18%;
 }
 .numbertext {
   color: #f2f2f2;
@@ -356,7 +356,7 @@ input:checked + .slider:before {
   }
   .text-slide-two {
     margin-left: 2%;  
-    margin-bottom: 2%; 
+    margin-bottom: 7%; 
   }
   .text-slide-one {
     margin-left: 7%;  
@@ -389,11 +389,11 @@ input:checked + .slider:before {
   }
   .text-slide-two {
     margin-left: 10%;  
-    margin-bottom: 1%; 
+    margin-bottom: 11%; 
   }
   .text-slide-one {
     margin-left: 10%;  
-    margin-bottom: 1%; 
+    margin-bottom: 11%; 
   }
   .sustainable-h1{
     text-align: center;
