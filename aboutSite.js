@@ -28,7 +28,6 @@ ChangeTheme();
 document.addEventListener('DOMContentLoaded', function() {
     var toggleButton = document.getElementById('toggle-content');
     var images = document.querySelectorAll('.hide-img'); 
-    var textDivs = document.querySelectorAll('.text');
     var button = document.getElementById("toggle-content");
     var slidesDivs = document.querySelectorAll('.slideshow-container')
 
@@ -42,13 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 image.classList.remove('hidden-content');
                 button.innerHTML = "Dölj bilder";
-            }
-        });
-        textDivs.forEach(function(textDiv) {
-            if(hide) {
-                textDiv.classList.add('hidden-content');
-            } else {
-                textDiv.classList.remove('hidden-content');
             }
         });
         slidesDivs.forEach(function(slidesDiv) {
