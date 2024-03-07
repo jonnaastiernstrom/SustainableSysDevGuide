@@ -1,6 +1,5 @@
 /* Grundläggande sidostyling */
 * { box-sizing: border-box}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -66,6 +65,12 @@ article {
 section {
   width: 66%;
 }
+section a, article a, .stretch-container a {
+  color: #4e77ff;
+}
+section a:hover, article a:hover, .stretch-container a:hover {
+  color: #9fb5ff;
+}
 .light-mode {
   background-color: #f0f0f0;
   color: #000; 
@@ -74,13 +79,24 @@ section {
   background-color: #fff;
   color: #000;
 }
+.light-mode #law-div {
+  border: 1px solid #000;
+  background-color: #d8f6ff; 
+  color: #000; 
+  box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
+}
+.light-mode .image-container, .light-mode .goal-img {
+  box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
+}
+.light-mode section a:hover,.light-mode article a:hover,.light-mode .stretch-container a:hover {
+  color: #2746b6;
+}
 #agenda-title {
   text-align: center;
   margin-top: 50px;
 }
 .image-container {
-  background-color: #fff;
-  padding: 10px;
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.575);
 }
 /* Carousel styleing */
 .mySlides {display: none}
@@ -239,10 +255,16 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.flex-sdg-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
 #img-goal{
   justify-content: space-between;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .sustainable-h1{
   text-align: center;
@@ -251,15 +273,21 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
 }
-.left-behind h2{
-  padding:15px;
+.left-behind {
+  text-align: center;
 }
 #law-div{
-  border-style: solid;
-  border-width: 1px;
-  width: 50%;
+  border: 1px solid white;
+  width: 90%;
   padding:5px;
-  background-color: #333;
+  background-color: #535353;
+  margin: auto;
+}
+.law-title {
+  text-align: center;
+}
+#law-div p {
+  font-size: 20px;
 }
 .aria-div{
   display: flex;
@@ -308,6 +336,13 @@ input:checked + .slider:before {
     margin-left: 7%;  
     margin-bottom: 10%; 
   }
+  #img-goal{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  #law-div {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -329,6 +364,14 @@ input:checked + .slider:before {
   .text-slide-one {
     margin-left: 10%;  
     margin-bottom: 1%; 
+  }
+  .sustainable-h1{
+    text-align: center;
+    font-size: 20px;
+  }
+  #img-goal{
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
