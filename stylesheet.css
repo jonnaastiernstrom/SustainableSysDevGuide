@@ -53,9 +53,15 @@ nav ul li a:hover { background-color: #555;}
   background-color: #111111;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
-  width: 97%;
+  width: 75%;
 }
 .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.flex-container-inside {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -69,15 +75,12 @@ section, article {
   box-shadow: 0 2px 3px rgba(134, 134, 134, 0.575);
 }
 article {
-  width: 30%;
-  font-size: 24px;
+  width: 23%;
   word-wrap: break-word;
 }
-.article-font-style {
-  font-size: 21px;
-}
+
 section {
-  width: 65%;
+  width: 50%;
   word-wrap: break-word;
 }
 section a, article a, .stretch-container a {
@@ -118,6 +121,16 @@ section a:hover, article a:hover, .stretch-container a:hover {
 .image-container-background {
   background-color: #fff;
   padding: 10px;
+  width: 25%;
+  height: 25%;
+}
+.image-container-background-second {
+  background-color: #fff;
+  padding: 10px;
+}
+.text-next-to-images {
+  width: 64%;
+  margin-left: 30px;
 }
 .center-images {
   display: flex; 
@@ -128,7 +141,7 @@ section a:hover, article a:hover, .stretch-container a:hover {
 /* Carousel styleing */
 .mySlides {display: none}
 .slideshow-container {
-  max-width: 1500px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
 }
@@ -351,6 +364,9 @@ input:checked + .slider:before {
   section, article {
       width: 96%;
   }
+  .stretch-container {
+    width: 96%;
+  }
   .text {
     width: 300px;
   }
@@ -382,6 +398,9 @@ input:checked + .slider:before {
   .stretch-container {
     width: 92%;
   }
+  .flex-container-inside {
+    flex-direction: column;
+  }
   .text {
     background-color: #717171b4;
     width: 250px;
@@ -406,6 +425,13 @@ input:checked + .slider:before {
   .image-container {
     max-width: 100%; 
     height: auto; 
+  }
+  .image-container-background {
+    width: 100%;
+  }
+  .text-next-to-images {
+    width: 100%;
+    margin-left: 0;
   }
   
 }
