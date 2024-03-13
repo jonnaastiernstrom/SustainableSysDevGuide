@@ -19,9 +19,9 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #444;
   display: flex; 
   align-items: center; 
+  justify-content: flex-start;
 }
 nav ul li a {
   text-decoration: none;
@@ -30,17 +30,34 @@ nav ul li a {
   display: inline-block;
 }
 nav ul li a:hover { background-color: #555;}
+nav {
+  margin: 1%;
+  margin-left: auto;
+}
 #toggle-content {
-  background-color: #0e78cf;
-  padding: 5px;
-  color: #fff;
+  padding: 7px 10px;
+  background: linear-gradient(to right, #45b2d6, #2f80ed);
+  border: none; 
+  border-radius: 5px; 
+  color: white; 
+  text-transform: uppercase; 
   font-weight: bold;
-  border-radius: 5px;
+  text-align: center;
+  cursor: pointer; 
+  transition: transform 0.2s, box-shadow 0.2s; 
+  box-shadow: 0 2px 4px rgba(121, 121, 121, 0.884);
+}
+#toggle-content:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+#toggle-content:active {
+  transform: scale(0.95);
 }
 .switch-container {
-  margin-left: auto;
   display: flex;
   align-items: center;
+  margin: 1%;
 }
 .fas {
   font-size: 20px;
@@ -61,6 +78,16 @@ nav ul li a:hover { background-color: #555;}
   justify-content: center;
   flex-direction: row;
 }
+.flex-container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-container-header h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times new roman';
+}
 .flex-container-inside {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +105,6 @@ article {
   width: 23%;
   word-wrap: break-word;
 }
-
 section {
   width: 50%;
   word-wrap: break-word;
@@ -347,11 +373,17 @@ input:checked + .slider:before {
     justify-content: space-between;
   }
   nav ul li {
-    flex-grow: 1;
     text-align: center; 
   }
   .flex-container {
     flex-direction: column;
+  }
+  .flex-container-header {
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: center;
   }
   .team-member {
     width: 100%;
@@ -389,8 +421,14 @@ input:checked + .slider:before {
 }
 
 @media all and (max-width: 500px) {
+  .flex-container-header h1 {
+    font-size: 30px;
+  }
   nav ul li {
     font-size: 12px;
+  }
+  nav {
+    margin-left: 0;
   }
   section, article {
     width: 92%;
