@@ -29,10 +29,17 @@ nav ul li a {
   padding: 1em 1em;
   display: inline-block;
 }
-nav ul li a:hover { background-color: #555;}
+nav ul li a:hover { 
+  background-color: #555;
+  border-radius: 5px;
+}
 nav {
   margin: 1%;
   margin-left: auto;
+}
+.active, .dot:hover {
+  background-color: #717171;
+  border-radius: 5px;
 }
 #toggle-content {
   padding: 7px 10px;
@@ -63,6 +70,10 @@ nav {
   font-size: 20px;
   color:#fff;
   margin: 5px;
+}
+#logo-style {
+  width: 5%;
+  margin-right: 10px;
 }
 .stretch-container {
   margin: 20px;
@@ -228,9 +239,6 @@ section a:hover, article a:hover, .stretch-container a:hover {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
 }
 .fade {
   animation-name: fade;
@@ -416,6 +424,9 @@ input:checked + .slider:before {
   }
   #law-div {
     width: 100%;
+  }
+  #logo-style {
+    width: 30%;
   }
 
 }
