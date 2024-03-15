@@ -27,35 +27,41 @@ ChangeTheme();
 
 document.addEventListener('DOMContentLoaded', function() {
     var toggleButton = document.getElementById('toggle-content');
-    var images = document.querySelectorAll('.hide-img'); 
-    var button = document.getElementById("toggle-content");
-    var slidesDivs = document.querySelectorAll('.slideshow-container')
-
+    var images = document.querySelectorAll('.hide-img');
+    var slidesDivs = document.querySelectorAll('.slideshow-container');
+    var sections = document.querySelectorAll('.changeable-section');
+    var articles = document.querySelectorAll('.changeable-article');
     var isContentHidden = localStorage.getItem('isContentHidden') === 'true';
 
     function toggleContent(hide) {
         images.forEach(function(image) {
-            if(hide) {
-                image.classList.add('hidden-content');
-                button.innerHTML = "Visa bilder";
-            } else {
-                image.classList.remove('hidden-content');
-                button.innerHTML = "Dölj bilder";
-            }
+            image.classList.toggle('hidden-content', hide);
         });
+
         slidesDivs.forEach(function(slidesDiv) {
-        if(hide) {
-            slidesDiv.classList.add('hidden-content');
-        } else {
-            slidesDiv.classList.remove('hidden-content');
-        }
+            slidesDiv.classList.toggle('hidden-content', hide);
         });
+
+        sections.forEach(function(section) {
+            section.classList.toggle('stretch-container', hide);
+            section.classList.toggle('changeable-section', !hide);
+        });
+
+        articles.forEach(function(article) {
+            article.classList.toggle('hidden-content', hide);
+        });
+
+        toggleButton.innerHTML = hide ? "Visa bilder" : "Dölj bilder";
+
         localStorage.setItem('isContentHidden', hide);
     }
+
     toggleContent(isContentHidden);
+
     toggleButton.addEventListener('click', function() {
         isContentHidden = !isContentHidden;
         toggleContent(isContentHidden);
     });
 });
+
 
