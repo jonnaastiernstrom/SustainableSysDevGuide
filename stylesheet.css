@@ -244,6 +244,11 @@ section a:hover, article a:hover, .stretch-container a:hover {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+.copyright-text{
+  color:lightgray;
+  font-size: 15px;
+
+}
 /*Styling för about*/
 #about-text-small{
   width: 100%;
